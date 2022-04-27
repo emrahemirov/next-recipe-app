@@ -1,6 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// /** @type {import('next').NextConfig} */
+const nextTranslate = require('next-translate');
 
-module.exports = nextConfig
+module.exports = nextTranslate({
+  reactStrictMode: true,
+  images: {
+    domains: ['i.picsum.photos']
+  },
+  webpack: (config, { isServer, webpack }) => {
+    return config;
+  }
+});
