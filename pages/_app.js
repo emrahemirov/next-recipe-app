@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import Layout from '../components/layout/Layout';
 import {
   colors,
   fontFamilies,
@@ -21,7 +22,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }
