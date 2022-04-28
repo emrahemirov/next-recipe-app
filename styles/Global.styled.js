@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
 
+
   body {
     background-color: ${({ theme }) =>
       css`rgb(${theme.themeStyles.backgroundColorRGB})`};

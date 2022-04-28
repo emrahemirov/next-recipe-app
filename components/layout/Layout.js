@@ -1,13 +1,16 @@
+//Component
 import Header from './header/Header';
 import Footer from './footer/Footer';
+//Style
+import { StyledLayout } from './Layout.styled';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <StyledLayout>
       <Header />
       {children}
       <Footer />
-    </div>
+    </StyledLayout>
   );
 };
 

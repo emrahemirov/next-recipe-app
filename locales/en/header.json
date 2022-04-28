@@ -1,4 +1,4 @@
 {
-  "navButtons": ["Home", "Recipes"],
+  "navButtonTitles": ["Home", "Recipes"],
   "searchInputPlaceholders": "Search"
 }

@@ -8,11 +8,19 @@ export const Button = styled.button`
 
   color: ${({ theme }) => css`rgb(${theme.themeStyles.textColorRGB})`};
 
-  &:hover {
-    transform: scale(1.1);
-  }
+  ${({ hoverScale }) =>
+    hoverScale &&
+    css`
+      :hover {
+        transform: scale(1.1);
+      }
+    `}
 
-  &:active {
-    transform: scale(0.9);
-  }
+  ${({ activeScale }) =>
+    activeScale &&
+    css`
+      :active {
+        transform: scale(0.9);
+      }
+    `}
 `;

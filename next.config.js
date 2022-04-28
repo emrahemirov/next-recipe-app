@@ -7,6 +7,10 @@ module.exports = nextTranslate({
     domains: ['i.picsum.photos']
   },
   webpack: (config, { isServer, webpack }) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [{ loader: '@svgr/webpack', options: { icon: true } }]
+    });
     return config;
   }
 });

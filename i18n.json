@@ -2,7 +2,7 @@
   "locales": ["tr", "en"],
   "defaultLocale": "tr",
   "pages": {
-    "*": ["common"]
+    "*": ["header"]
   },
   "localeDetection": true
 }
