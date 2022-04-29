@@ -2,7 +2,8 @@
   "locales": ["tr", "en"],
   "defaultLocale": "tr",
   "pages": {
-    "*": ["header", "footer"]
+    "*": ["header", "footer"],
+    "/": ["home"]
   },
   "localeDetection": true
 }

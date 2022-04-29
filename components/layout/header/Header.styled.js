@@ -4,10 +4,13 @@ import { Button } from '../../../styles/common/Button.styled';
 
 export const StyledHeader = styled.header`
   position: sticky;
+  z-index: 10;
   top: 0;
   ${FlexContainer};
   flex-wrap: wrap;
   padding: 2rem 2rem;
+  background-color: ${({ theme }) =>
+    css`rgb(${theme.themeStyles.backgroundColorRGB})`};
   box-shadow: ${({ theme }) =>
     css`
       ${theme.boxShadows.header}
