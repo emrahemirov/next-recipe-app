@@ -8,8 +8,6 @@ export const StyledHeader = styled.header`
   ${FlexContainer};
   flex-wrap: wrap;
   padding: 2rem 2rem;
-  background-color: ${({ theme }) =>
-    css`rgb(${theme.themeStyles.backgroundColorRGB})`};
   box-shadow: ${({ theme }) =>
     css`
       ${theme.boxShadows.header}
@@ -21,6 +19,12 @@ export const LogoContainer = styled.div`
 
   svg {
     font-size: 6rem;
+  }
+
+  @media (max-width: 27em) {
+    svg {
+      font-size: 4.5rem;
+    }
   }
 `;
 
