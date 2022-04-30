@@ -6,7 +6,7 @@ import HomeSection from '../components/sections/home-section/HomeSection';
 export default function HomePage() {
   const { t } = useTranslation();
 
-  const pageTitle = t('home:pageTitle');
+  const pageTitle = t('homePage:pageTitle');
 
   return (
     <>

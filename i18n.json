@@ -3,7 +3,8 @@
   "defaultLocale": "tr",
   "pages": {
     "*": ["header", "footer"],
-    "/": ["home"]
+    "/": ["homePage"],
+    "/recipes": ["recipesPage"]
   },
   "localeDetection": true
 }

@@ -12,3 +12,11 @@ export const useLayoutStore = create(set => ({
         : { themeMode: 'dark' }
     )
 }));
+
+export const useRecipesStore = create(set => ({
+  recipes: undefined,
+  setRecipes: data =>
+    set(() => ({
+      recipes: data
+    }))
+}));

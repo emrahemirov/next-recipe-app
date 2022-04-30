@@ -15,7 +15,7 @@ const HomeSection = () => {
   const { t } = useTranslation();
 
   for (let i = 0; i < homePageTexts.length; i++) {
-    homePageTexts[i].title = t(`home:textTitles.${i}`);
+    homePageTexts[i].title = t(`homePage:textTitles.${i}`);
   }
 
   return (
