@@ -4,7 +4,8 @@
   "pages": {
     "*": ["header", "footer"],
     "/": ["homePage"],
-    "/recipes": ["recipesPage"]
+    "/recipes": ["recipesPage"],
+    "/recipes/[recipeId]": ["recipeDetailsPage"]
   },
   "localeDetection": true
 }

@@ -8,10 +8,6 @@ import { StyledRecipesContainer } from './RecipesContainer.styled';
 
 const RecipesContainer = () => {
   const recipes = useRecipesStore(state => state.recipes);
-  console.log(
-    '🚀 ~ file: RecipesContainer.js ~ line 11 ~ RecipesContainer ~ recipes',
-    recipes
-  );
 
   return (
     <StyledRecipesContainer direction='row' axisX='center' axisY='flex-start'>

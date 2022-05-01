@@ -19,6 +19,12 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) =>
       css`rgb(${theme.themeStyles.backgroundColorRGB})`};
   }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 
 export default GlobalStyles;

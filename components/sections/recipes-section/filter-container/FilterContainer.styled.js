@@ -5,7 +5,7 @@ import { Button } from '../../../../styles/common/Button.styled';
 export const StyledFilterContainer = styled.div`
   ${FlexContainer};
 
-  width: 50%;
+  min-width: 50%;
   margin: 1rem auto;
 
   input:nth-child(2) {
@@ -13,10 +13,9 @@ export const StyledFilterContainer = styled.div`
     width: 10rem;
   }
 
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  @media (max-width: 48em) {
+    flex-direction: column;
+    gap: 1rem;
   }
 `;
 
@@ -36,12 +35,10 @@ const commonStyles = css`
 
 export const Input = styled.input`
   ${commonStyles}
-  margin-left: 3rem;
 `;
 
 export const Select = styled.select`
   ${commonStyles}
-  margin-left: 5rem;
 `;
 
 export const Option = styled.option`
@@ -51,7 +48,6 @@ export const Option = styled.option`
 export const SearchButton = styled(Button)`
   ${commonStyles};
   ${FlexContainer};
-  margin-left: 3rem;
   padding: 0;
   width: 3rem;
   height: 3rem;
