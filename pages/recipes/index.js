@@ -6,15 +6,17 @@ import RecipesSection from '../../components/sections/recipes-section/RecipesSec
 //Store
 import { useRecipesStore } from '../../store/store';
 
-const RecipesPage = ({ recipes }) => {
+const RecipesPage = ({ recipes, notFound }) => {
   const { t } = useTranslation();
 
   const setRecipes = useRecipesStore(state => state.setRecipes);
+  const setRecipeNotFound = useRecipesStore(state => state.setRecipeNotFound);
 
   const pageTitle = t('recipesPage:pageTitle');
 
   useEffect(() => {
     setRecipes(recipes);
+    setRecipeNotFound(notFound);
   });
 
   return (
@@ -42,6 +44,6 @@ export async function getServerSideProps(context) {
 
   const recipes = await response.json();
 
-  if (recipes.length > 0) return { props: { recipes } };
-  else return { props: {} };
+  if (recipes.length > 0) return { props: { notFound: false, recipes } };
+  else return { props: { notFound: true, recipes } };
 }

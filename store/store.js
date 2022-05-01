@@ -24,13 +24,13 @@ export const useLayoutStore = create(
 
 export const useRecipesStore = create(set => ({
   recipes: undefined,
-  recipe: undefined,
+  recipeNotFound: undefined,
   setRecipes: data =>
     set(() => ({
       recipes: data
     })),
-  setRecipe: data =>
+  setRecipeNotFound: data =>
     set(() => ({
-      recipe: data
+      recipeNotFound: data
     }))
 }));

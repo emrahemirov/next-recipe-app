@@ -4,7 +4,7 @@ import { Button } from '../../../../styles/common/Button.styled';
 
 export const StyledFilterContainer = styled.div`
   ${FlexContainer};
-
+  gap: 1rem;
   min-width: 50%;
   margin: 1rem auto;
 
@@ -15,7 +15,6 @@ export const StyledFilterContainer = styled.div`
 
   @media (max-width: 48em) {
     flex-direction: column;
-    gap: 1rem;
   }
 `;
 

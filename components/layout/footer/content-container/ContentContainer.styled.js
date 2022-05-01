@@ -8,10 +8,6 @@ export const StyledContentContainer = styled.div`
   @media (max-width: 48em) {
     flex-direction: column;
   }
-
-  @media (max-width: 27em) {
-    margin: 0;
-  }
 `;
 
 export const Text = styled.p`
@@ -27,5 +23,9 @@ export const Text = styled.p`
   @media (max-width: 48em) {
     margin-left: 0;
     margin-top: 1rem;
+  }
+
+  @media (max-width: 27em) {
+    font-size: 1.2rem;
   }
 `;
