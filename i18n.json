@@ -2,7 +2,7 @@
   "locales": ["tr", "en"],
   "defaultLocale": "tr",
   "pages": {
-    "*": ["header", "footer"],
+    "*": ["header", "footer", "spinner"],
     "/": ["homePage"],
     "/recipes": ["recipesPage"],
     "/recipes/[recipeId]": ["recipeDetailsPage"]

@@ -27,7 +27,7 @@ export async function getStaticProps({ params }) {
   return { props: { recipe } };
 }
 
-export async function getStaticPaths(context) {
+export async function getStaticPaths() {
   return {
     paths: [{ params: { recipeId: '' } }],
     fallback: 'blocking'

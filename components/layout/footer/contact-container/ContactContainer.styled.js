@@ -13,6 +13,10 @@ export const StyledContactContainer = styled.div`
 export const Header = styled.h1`
   color: ${({ theme }) => css`rgb(${theme.colors.secondaryRGB})`};
   text-decoration: underline;
+
+  @media (max-width: 27em) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -21,5 +25,9 @@ export const Text = styled.p`
 
   @media (max-width: 64em) {
     margin: 0.5rem 0;
+  }
+
+  @media (max-width: 27em) {
+    font-size: 1.2rem;
   }
 `;
