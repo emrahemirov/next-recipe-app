@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { recipeId: '' } }],
+    paths: [],
     fallback: 'blocking'
   };
 }
